@@ -1,3 +1,4 @@
+//import the interface for the component we want to use this data in...
 import { Hero } from './hero';
 
 export const HEROES: Hero[] = [
