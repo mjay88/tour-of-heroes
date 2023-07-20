@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
 //import the  data
 import { HeroService } from '../hero.service';
-import { MessageService } from '../message.service';
+// import { MessageService } from '../message.service';
 
 @Component({
   selector: 'app-heroes',
@@ -12,21 +12,21 @@ import { MessageService } from '../message.service';
 })
 export class HeroesComponent {
   // Replace the definition of the heroes property with a declaration.
-  selectedHero?: Hero;
+  // selectedHero?: Hero;
   heroes: Hero[] = [];
   // The parameter simultaneously defines a private heroService property and identifies it as a HeroService injection site.
   constructor(
-    private heroService: HeroService,
-    private messageService: MessageService
+    private heroService: HeroService // private messageService: MessageService
   ) {}
   // call getHeroes() inside the ngOnInit lifecycle hook and let Angular call ngOnInit() at an appropriate time after constructing a HeroesComponent instance.
   ngOnInit(): void {
     this.getHeroes();
   }
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-    this.messageService.add(`HeroesCompnent: Selected hero id=${hero.id}`);
-  }
+
+  // onSelect(hero: Hero): void {
+  //   this.selectedHero = hero;
+  //   this.messageService.add(`HeroesCompnent: Selected hero id=${hero.id}`);
+  // }
 
   // Create a method to retrieve the heroes from the service.
   // The HeroService.getHeroes method used to return a Hero[]. Now it returns an Observable<Hero[]>.
