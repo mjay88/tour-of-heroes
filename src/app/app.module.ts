@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 
@@ -26,6 +26,7 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     HeroSearchComponent,
   ],
   imports: [
+    RouterModule,
     BrowserModule,
     FormsModule,
     AppRoutingModule,

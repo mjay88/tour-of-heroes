@@ -1,7 +1,7 @@
-<div id="search-component">
+<div class="p-5" id="search-component">
   <label for="search-box">Hero Search</label>
   <!-- The event binding to the text box's input event calls the search() method. -->
-  <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+  <input class="outline rounded-md w-full focus:rounded-md h-10" #searchBox id="search-box" (input)="search(searchBox.value)" />
 
   <ul class="search-result">
     <li *ngFor="let hero of heroes$ | async">

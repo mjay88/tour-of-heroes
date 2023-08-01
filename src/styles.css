@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    a, button {
+        @apply flex items-center justify-center bg-slate-300 text-center font-bold my-2 hover:bg-slate-700 hover:text-white rounded-xl w-48 h-16 lg:w-72;
+    }
+    h1 {
+        @apply mx-auto;
+    }
+    
+   
+
+}

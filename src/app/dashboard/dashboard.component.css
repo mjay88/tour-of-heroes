@@ -23,7 +23,7 @@ h2 {
 }
 
 a {
-  background-color: #3f525c;
+  /* background-color: #3f525c;
   border-radius: 2px;
   padding: 1rem;
   font-size: 1.2rem;
@@ -31,24 +31,24 @@ a {
   display: inline-block;
   color: #fff;
   text-align: center;
-  width: 100%;
-  min-width: 70px;
-  margin: 0.5rem auto;
-  box-sizing: border-box;
+  width: 100%; */
+  /* min-width: 70px; */
+  /* margin: 0.5rem auto; */
+  /* box-sizing: border-box; */
 
   /* flexbox */
-  order: 0;
-  flex: 0 1 auto;
-  align-self: auto;
+  /* order: 0; */
+  /* flex: 0 1 auto; */
+  /* align-self: auto; */
 }
 
 @media (min-width: 600px) {
-  a {
+  /* a {
     width: 18%;
     box-sizing: content-box;
-  }
+  } */
 }
 
 a:hover {
-  background-color: black;
+  /* background-color: black; */
 }

@@ -1,6 +1,6 @@
-<h2>Top Heroes</h2>
-<div class="heroes-menu">
-  <a *ngFor="let hero of heroes" routerLink="/detail/ {{ hero.id }}">
+<h2 class="p-5 text-2xl font-bold">Top Heroes</h2>
+<div class="p-5 flex justify-around items-center flex-col md:flex-row">
+  <a class="flex items-center justify-center bg-slate-300 text-center font-bold my-2 hover:bg-slate-700 hover:text-white rounded-xl w-48 h-16 md:36 md:mx-1 lg:60 xl:66 2xl:w-72" *ngFor="let hero of heroes" routerLink="/detail/ {{ hero.id }}">
     {{ hero.name }}
   </a>
 </div>

@@ -1,8 +1,8 @@
 <!-- Only displays the messages area if there are messages to show. -->
-<div *ngIf="messageService.messages.length">
+<div class="flex flex-col p-5" *ngIf="messageService.messages.length">
   <h2>Messages</h2>
   <!-- Binds the button's click event to MessageService.clear(). -->
-  <button type="button" class="clear" (click)="messageService.clear()">
+  <button type="button" class="bg-slate-300" (click)="messageService.clear()">
     Clear messages
   </button>
   <!-- Presents the list of messages in repeated <div> elements. -->
